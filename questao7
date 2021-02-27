@@ -1,0 +1,30 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 7**********");
+    float ladoA, ladoB, ladoC;
+
+    Console.Write("Infomer o lado A: ");
+    ladoA = float.Parse(Console.ReadLine());
+
+    Console.Write("Infomer o lado B: ");
+    ladoB = float.Parse(Console.ReadLine());
+
+    Console.Write("Infomer o lado C: ");
+    ladoC = float.Parse(Console.ReadLine());
+
+    if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC)
+    {
+      Console.WriteLine("É um triangulo Equilátero");
+    }
+    else if(ladoA == ladoB && ladoA != ladoC || ladoB == ladoC && ladoB != ladoA || ladoA == ladoC && ladoA != ladoB)
+    {
+      Console.WriteLine("É um triangulo Isóceles.");
+    }
+    else{
+      Console.WriteLine("É uma triangulo Escaleno.");
+    }
+  }
+}
