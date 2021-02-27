@@ -1,0 +1,30 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 13**********");
+    int []a = new int [10];
+    int []b = new int [10];
+    int i;
+
+    for(i = 0; i < 10; i++)
+    {
+      Console.Write($"{i} - digite os dados do Vetor A: " );
+      a[i] = int.Parse(Console.ReadLine());
+    } 
+    Console.Write("\n*********Matriz A e B*******\n");
+    for(i = 0; i < 10; i++)
+    {
+      if((a[i]% 2) == 0 )
+      {
+        b[i] = a[i] * 5;
+        Console.WriteLine($"A{i}={a[i]} | | B{i}={b[i]}");
+      }
+      else{
+        b[i] = a[i] + 5;
+        Console.WriteLine($"A{i}={a[i]} | | B{i}={b[i]}");
+      }
+    }
+  }
+}
