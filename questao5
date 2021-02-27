@@ -1,0 +1,55 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 5**********");
+
+    int num1, num2, num3, num4;
+
+    Console.Write("Informe um número inteiro A: ");
+    num1 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro B: ");
+    num2 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro C: ");
+    num3 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro D: ");
+    num4 = int.Parse(Console.ReadLine());
+
+    if(num1 %2==0 && num1 %3==0)
+    {
+      Console.WriteLine($"O número {num1} é divisível por 2 e 3");
+    }
+
+    else {
+      Console.WriteLine($"O número {num1} não divisível por 2 e 3.");
+    }
+  
+    if(num2 %2==0 && num2 %3==0)
+    {
+      Console.WriteLine($"O número {num2} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num2} não divisível por 2 e 3.");
+    }
+
+    if(num3 %2==0 && num3 %3==0)
+    {
+      Console.WriteLine($"O número {num3} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num3} não divisível por 2 e 3.");
+    }
+
+    if(num4 %2==0 && num4 %3==0)
+    {
+      Console.WriteLine($"O número {num4} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num4} não divisível por 2 e 3.");
+    }
+  }
+}
