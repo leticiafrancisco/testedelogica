@@ -1,0 +1,47 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 9**********");
+    double vlE, vlF, result1 = 0;
+    int decisao;
+    string resposta;
+
+    do{
+      Console.Write("Informe um número: ");
+      vlE = double.Parse(Console.ReadLine());
+
+      Console.Write("Informe outro número: ");
+      vlF = double.Parse(Console.ReadLine());
+
+      Console.WriteLine("1 - Soma | 2 - Subtração | 3 - Multiplicação | 4 - Divisão");
+      Console.Write("Informe a operação: ");
+      decisao = int.Parse(Console.ReadLine());
+
+      if(decisao ==1)
+      {
+        result1 = vlE + vlF;
+      }
+      else if (decisao ==2 )
+      {
+        result1 = vlE - vlF;
+      }
+      else if(decisao == 3)
+      {
+        result1 = vlE * vlF;
+      }
+      else if(decisao == 4)
+      {
+        result1 = vlE /vlF;
+      }
+      else{
+        Console.WriteLine("ERRO");
+      }
+      Console.WriteLine($"Resultado = {result1}");
+      Console.Write("Deseja realizar uma nova operação(s/n): ");
+      resposta = Console.ReadLine();
+    } 
+    while(resposta == "s");
+  }
+}
