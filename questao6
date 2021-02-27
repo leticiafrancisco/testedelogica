@@ -1,0 +1,74 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 5**********");
+    int num5, num6, num7, num8, num9;
+    
+    Console.Write("Informe um número inteiro A: ");
+    num5 = int.Parse(Console.ReadLine());
+    
+    Console.Write("Informe um número inteiro B: ");
+    num6 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro C: ");
+    num7 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro D: ");
+    num8 = int.Parse(Console.ReadLine());
+    
+    Console.Write("Informe um número inteiro E: ");
+    num9 = int.Parse(Console.ReadLine());
+
+    if(num5 > num6 && num5 > num7 && num5 > num8 && num5 > num9)
+    {
+      Console.WriteLine($"O número {num5} é o maior.");    
+    }
+    else if(num6 > num5 && num6 > num7 && num6 > num8 && num6 > num9)
+    {
+      Console.WriteLine($"O número {num6} é o maior.");    
+    } 
+    else if(num7 > num5 && num7 > num6 && num7 > num8 && num7 > num9)
+    {
+      Console.WriteLine($"O número {num7} é o maior.");    
+    }
+    else if(num8 > num5 && num8 > num6 && num8 > num7 && num8 > num9)
+    {
+      Console.WriteLine($"O número {num8} é o maior.");    
+    }
+    else if (num9 > num5 && num9 > num6 && num9 > num7 && num9 > num8)
+    {
+      Console.WriteLine($"O número {num9} é o maior.");    
+    }
+    else
+    {
+      Console.WriteLine($"ERRO");
+    }
+    //teste de menor número
+    if(num5 < num6 && num5 < num7 && num5 < num8 && num5 < num9)
+    {
+      Console.WriteLine($"O número {num5} é o menor.");    
+    }
+    else if(num6 < num5 && num6 < num7 && num6 < num8 && num6 < num9)
+    {
+      Console.WriteLine($"O número {num6} é o menor.");    
+    } 
+    else if(num7 < num5 && num7 < num6 && num7 < num8 && num7 < num9)
+    {
+      Console.WriteLine($"O número {num7} é o menor.");    
+    }
+    else if(num8 < num5 && num8 < num6 && num8 < num7 && num8 < num9)
+    {
+      Console.WriteLine($"O número {num8} é o menor.");    
+    }
+    else if (num9 < num5 && num9 < num6 && num9 < num7 && num9 < num8)
+    {
+      Console.WriteLine($"O número {num9} é o menor.");    
+    }
+    else
+    {
+      Console.WriteLine($"ERRO");
+    }
+  }
+}
