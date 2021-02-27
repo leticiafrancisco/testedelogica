@@ -1,0 +1,26 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 10**********");
+    string [] nomes = new string [5];
+
+    Console.Write("Informe primeiro nome: ");
+    nomes [0] = Console.ReadLine();
+
+    Console.Write("Informe segundo nome: ");
+    nomes[1] = Console.ReadLine();
+
+    Console.Write("Informe terceiro nome: ");
+    nomes [2] = Console.ReadLine();
+
+    Console.Write("Informe quarto nome: ");
+    nomes [3] = Console.ReadLine();
+
+    Console.Write("Informe quinto nome: ");
+    nomes[4] = Console.ReadLine();
+
+    Console.WriteLine($"Nomes informados:{nomes[0]}, {nomes[1]}, {nomes[2]}, {nomes[3]} e {nomes[4]} ");
+  }
+}
