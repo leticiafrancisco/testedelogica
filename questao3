@@ -1,0 +1,28 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 3**********");
+
+    int vlA, vlB, vlC, vlD, vlP,vlS;
+
+    Console.Write("Informe um número inteiro A: ");
+    vlA = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro B: ");
+    vlB = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro C: ");
+    vlC = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro D: ");
+    vlD = int.Parse(Console.ReadLine());
+
+    vlP = vlC;  
+    vlS = vlB + vlD;
+
+    Console.WriteLine("Resultado do produto: " + vlP);
+    Console.WriteLine("Resultado da soma: " + vlS);    
+  }
+}
