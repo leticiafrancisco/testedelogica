@@ -1,0 +1,398 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 1**********");
+
+    float tempo, velocidade, litrosUsados, distancia;
+
+    Console.Write("Tempo gasto(ex: 2.30): ");
+    tempo = float.Parse(Console.ReadLine());
+
+    Console.Write("Velocidade média: ");
+    velocidade = float.Parse(Console.ReadLine());
+
+    distancia = tempo * velocidade;
+
+    litrosUsados = distancia / 12;
+
+    Console.WriteLine($"Velocidade média:{velocidade}");
+    Console.WriteLine($"Tempo gasto de viagem: {tempo}");
+    Console.WriteLine($"Distância percorrida: {distancia}");
+    Console.WriteLine($"Quantidade de litros utilizados: {litrosUsados}");
+
+    Console.WriteLine("**********QUESTÃO 2**********");
+
+    int numA, numB, numC, numD, soma1, soma2, soma3,soma4,soma5,soma6, mult1, mult2, mult3, mult4, mult5, mult6;
+
+    Console.Write("Digite valor de A: ");
+    numA = int.Parse(Console.ReadLine());
+    
+    Console.Write("Digite valor de B: ");
+    numB = int.Parse(Console.ReadLine());
+   
+    Console.Write("Digite valor de C: ");
+    numC = int.Parse(Console.ReadLine());
+   
+    Console.Write("Digite valor de D: ");
+    numD = int.Parse(Console.ReadLine());
+
+    soma1 = numA + numB;
+    mult1 = numA * numB;
+
+    soma2 = numA + numC;
+    mult2 = numA * numC;
+
+    soma3 = numA + numD;
+    mult3 = numA * numD;
+
+    soma4 = numB + numC;
+    mult4 = numB * numC;
+
+    soma5 = numB + numD;
+    mult5 = numB * numD;
+
+    soma6 = numC + numD;
+    mult6 = numC * numD;
+
+    Console.WriteLine("**************RESULTADO*****************");
+    Console.WriteLine("A soma de A com B é: " + soma1);
+    Console.WriteLine("A multiplicação de A com B é: " + mult1);
+
+    Console.WriteLine("A soma de A com C é: " + soma2);
+    Console.WriteLine("A multiplicação de A com C é: " + mult2);
+
+    Console.WriteLine("A soma de A com D é: " + soma3);
+    Console.WriteLine("A multiplicação de A com D é: " + mult3);
+
+    Console.WriteLine("A soma de B com C é: " + soma4);
+    Console.WriteLine("A multiplicação de B com C é: " + mult4);
+
+    Console.WriteLine("A soma de B com D é: " + soma5);
+    Console.WriteLine("A multiplicação de B com D é: " + mult5);
+
+    Console.WriteLine("A soma de C com D é: " + soma6);
+    Console.WriteLine("A multiplicação de C com D é: " + mult6);
+
+    Console.WriteLine("**********QUESTÃO 3**********");
+
+    int vlA, vlB, vlC, vlD, vlP,vlS;
+
+    Console.Write("Informe um número inteiro A: ");
+    vlA = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro B: ");
+    vlB = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro C: ");
+    vlC = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro D: ");
+    vlD = int.Parse(Console.ReadLine());
+
+    vlP = vlC;  
+    vlS = vlB + vlD;
+
+    Console.WriteLine("Resultado do produto: " + vlP);
+    Console.WriteLine("Resultado da soma: " + vlS);
+
+    Console.WriteLine("**********QUESTÃO 4**********");
+
+    int vA, vB, vC;
+
+    Console.Write("Digite um número inteiro para A: ");
+    vA = int.Parse(Console.ReadLine());
+
+    Console.Write("Digite um número inteiro para B: ");
+    vB = int.Parse(Console.ReadLine());
+
+    Console.Write("Digite um número inteiro para C: ");
+    vC = int.Parse(Console.ReadLine());
+
+    if(vA <= vB && vA <= vC && vB <+ vC){
+      Console.WriteLine($"Ordem crescente: {vA}, {vB}, {vC}...");
+    } 
+    else if(vA <= vC && vA <= vB && vC <= vB){
+      Console.WriteLine($"Ordem crescente: {vA}, {vC}, {vB}...");
+    }
+    else if(vB <= vA && vB <= vC && vA <= vC ){
+      Console.WriteLine($"Ordem crescente: {vB}, {vA}, {vC}...");
+    }
+    else if(vB <= vC && vB <= vA && vC <= vA ){
+      Console.WriteLine($"Ordem crescente: {vB}, {vC}, {vA}...");
+    }
+    else if(vC <= vA && vC <= vB && vA <= vB ){
+      Console.WriteLine($"Ordem crescente: {vC}, {vA}, {vB}...");
+    }
+    else if(vC <= vA && vC <= vB && vB <= vA ){
+      Console.WriteLine($"Ordem crescente: {vC}, {vB}, {vA}...");
+    }
+    else{
+      Console.WriteLine("ERRO");
+    }
+
+    Console.WriteLine("**********QUESTÃO 5**********");
+
+    int num1, num2, num3, num4;
+
+    Console.Write("Informe um número inteiro A: ");
+    num1 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro B: ");
+    num2 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro C: ");
+    num3 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro D: ");
+    num4 = int.Parse(Console.ReadLine());
+
+    if(num1 %2==0 && num1 %3==0){
+      Console.WriteLine($"O número {num1} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num1} não divisível por 2 e 3.");
+    }
+    if(num2 %2==0 && num2 %3==0){
+      Console.WriteLine($"O número {num2} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num2} não divisível por 2 e 3.");
+    }
+    if(num3 %2==0 && num3 %3==0)
+    {
+      Console.WriteLine($"O número {num3} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num3} não divisível por 2 e 3.");
+    }
+
+    if(num4 %2==0 && num4 %3==0){
+      Console.WriteLine($"O número {num4} é divisível por 2 e 3");
+    }
+    else {
+      Console.WriteLine($"O número {num4} não divisível por 2 e 3.");
+    }
+
+    Console.WriteLine("**********QUESTÃO 6**********");
+    
+    int num5, num6, num7, num8, num9;
+    
+    Console.Write("Informe um número inteiro A: ");
+    num5 = int.Parse(Console.ReadLine());
+    
+    Console.Write("Informe um número inteiro B: ");
+    num6 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro C: ");
+    num7 = int.Parse(Console.ReadLine());
+
+    Console.Write("Informe um número inteiro D: ");
+    num8 = int.Parse(Console.ReadLine());
+    
+    Console.Write("Informe um número inteiro E: ");
+    num9 = int.Parse(Console.ReadLine());
+
+    if(num5 > num6 && num5 > num7 && num5 > num8 && num5 > num9){
+      Console.WriteLine($"O número {num5} é o maior.");    
+    }
+    else if(num6 > num5 && num6 > num7 && num6 > num8 && num6 > num9){
+      Console.WriteLine($"O número {num6} é o maior.");    
+    } 
+    else if(num7 > num5 && num7 > num6 && num7 > num8 && num7 > num9){
+      Console.WriteLine($"O número {num7} é o maior.");    
+    }
+    else if(num8 > num5 && num8 > num6 && num8 > num7 && num8 > num9){
+      Console.WriteLine($"O número {num8} é o maior.");    
+    }
+    else if (num9 > num5 && num9 > num6 && num9 > num7 && num9 > num8){
+      Console.WriteLine($"O número {num9} é o maior.");    
+    }
+    else{
+      Console.WriteLine($"ERRO");
+    }
+    
+    //teste de menor número
+    if(num5 < num6 && num5 < num7 && num5 < num8 && num5 < num9){
+      Console.WriteLine($"O número {num5} é o menor.");    
+    }
+    else if(num6 < num5 && num6 < num7 && num6 < num8 && num6 < num9){
+      Console.WriteLine($"O número {num6} é o menor.");    
+    } 
+    else if(num7 < num5 && num7 < num6 && num7 < num8 && num7 < num9){
+      Console.WriteLine($"O número {num7} é o menor.");    
+    }
+    else if(num8 < num5 && num8 < num6 && num8 < num7 && num8 < num9){
+      Console.WriteLine($"O número {num8} é o menor.");    
+    }
+    else if (num9 < num5 && num9 < num6 && num9 < num7 && num9 < num8){
+      Console.WriteLine($"O número {num9} é o menor.");    
+    }
+    else{
+      Console.WriteLine($"ERRO");
+    }
+  
+    Console.WriteLine("**********QUESTÃO 7**********");
+
+    float ladoA, ladoB, ladoC;
+
+    Console.Write("Infomer o lado A: ");
+    ladoA = float.Parse(Console.ReadLine());
+
+    Console.Write("Infomer o lado B: ");
+    ladoB = float.Parse(Console.ReadLine());
+
+    Console.Write("Infomer o lado C: ");
+    ladoC = float.Parse(Console.ReadLine());
+
+    if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
+      Console.WriteLine("É um triangulo Equilátero");
+    }
+    else if(ladoA == ladoB && ladoA != ladoC || ladoB == ladoC && ladoB != ladoA || ladoA == ladoC && ladoA != ladoB){
+      Console.WriteLine("É um triangulo Isóceles.");
+    }
+    else{
+      Console.WriteLine("É uma triangulo Escaleno.");
+    }
+
+    Console.WriteLine("**********QUESTÃO 8**********");
+
+    double numN = 5;
+    double p4, fatorial;
+
+    fatorial = numN;
+
+    for (p4 = numN - 1; p4 >= 1; p4--){
+      Console.WriteLine($"{fatorial} * {p4}");
+
+      fatorial = fatorial * p4;
+
+      Console.WriteLine($"Fatorial = {fatorial}");
+    
+    }
+    Console.WriteLine($"\nFatorial de {numN} é {fatorial} ");
+
+    Console.WriteLine("**********QUESTÃO 9**********"); 
+
+    double vlE, vlF, result1 = 0;
+    int decisao;
+    string resposta;
+
+    do{
+      Console.Write("Informe um número: ");
+      vlE = double.Parse(Console.ReadLine());
+
+      Console.Write("Informe outro número: ");
+      vlF = double.Parse(Console.ReadLine());
+
+      Console.WriteLine("1 - Soma | 2 - Subtração | 3 - Multiplicação | 4 - Divisão");
+      Console.Write("Informe a operação: ");
+      decisao = int.Parse(Console.ReadLine());
+
+      if(decisao ==1){
+        result1 = vlE + vlF;
+      }
+      else if (decisao ==2 ){
+        result1 = vlE - vlF;
+      }
+      else if(decisao == 3){
+        result1 = vlE * vlF;
+      }
+      else if(decisao == 4){
+        result1 = vlE /vlF;
+      }
+      else{
+        Console.WriteLine("ERRO");
+      }
+
+      Console.WriteLine($"Resultado ={result1}");
+      Console.Write("Deseja realizar uma nova operação(s/n): ");
+      resposta = Console.ReadLine();
+
+    } 
+    while(resposta == "s");
+
+    Console.WriteLine("**********QUESTÃO 10**********");
+
+    string [] nomes = new string [5];
+
+    Console.Write("Informe primeiro nome: ");
+    nomes [0] = Console.ReadLine();
+
+    Console.Write("Informe segundo nome: ");
+    nomes[1] = Console.ReadLine();
+
+    Console.Write("Informe terceiro nome: ");
+    nomes [2] = Console.ReadLine();
+
+    Console.Write("Informe quarto nome: ");
+    nomes [3] = Console.ReadLine();
+
+    Console.Write("Informe quinto nome: ");
+    nomes[4] = Console.ReadLine();
+
+    Console.WriteLine($"Nomes informados:{nomes[0]}, {nomes[1]}, {nomes[2]}, {nomes[3]}, {nomes[4]} ");
+
+    Console.WriteLine("**********QUESTÃO 11**********");
+     
+    int []linhaA = new int [10];
+    int []linhaB = new int [10];
+    int s;
+
+    for(s = 0; s < 10; s++){
+      Console.Write($"{s} - digite os dados da Matriz A: " );
+      linhaA[s] = int.Parse(Console.ReadLine());
+    } 
+    Console.Write("\n*********Matriz A e B*******\n");
+    for(s = 0; s < 10; s++){
+      linhaB[s] = linhaA[s] *3;
+      
+      Console.WriteLine($"A[{s}]={linhaA[s]} | | B[{s}]={linhaB[s]}");
+    }
+
+    Console.WriteLine("**********QUESTÃO 12**********");
+
+    int [] matrizM = new int [10];
+    int l, totalImpares = 0;
+    
+    for(l = 0; l < 10; l++){
+      Console.Write($"{l} - digite os dados da Matriz A: " );
+      matrizM[l] = int.Parse(Console.ReadLine());
+    } 
+   
+    for (l = 0; l < 10; l++){
+      if ((matrizM[l] % 2) != 0){
+        totalImpares += matrizM[l];
+      }
+    }
+    Console.WriteLine($"Total da soma dos números impares: {totalImpares}");
+
+    Console.WriteLine("**********QUESTÃO 13**********");
+
+    int []a = new int [10];
+    int []b = new int [10];
+    int i;
+
+    for(i = 0; i < 10; i++){
+      Console.Write($"{i} - digite os dados do Vetor A: " );
+      a[i] = int.Parse(Console.ReadLine());
+    } 
+    Console.Write("\n*********Matriz A*******\n");
+    for(i = 0; i < 10; i++){
+      Console.WriteLine($" A[{i}] = {a[i]}");
+    } 
+    Console.Write("\n*********Matriz A e B*******\n");
+    for(i = 0; i < 10; i++){
+      if((a[i]% 2) == 0 ){
+        b[i] = a[i] * 5;
+        Console.WriteLine($"A{i}={a[i]} | | B{i}={b[i]}");
+      }
+      else{
+        b[i] = a[i] + 5;
+        Console.WriteLine($"A{i}={a[i]} | | B{i}={b[i]}");
+      }
+    }
+    Console.ReadKey();
+  }
+}
