@@ -1,0 +1,24 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 11**********");
+    
+    int []linhaA = new int [10];
+    int []linhaB = new int [10];
+    int s;
+
+    for(s = 0; s < 10; s++)
+    {
+      Console.Write($"{s} - digite os dados da Matriz A: " );
+      linhaA[s] = int.Parse(Console.ReadLine());
+    } 
+    Console.Write("\n*********Matriz A e B*******\n");
+    for(s = 0; s < 10; s++)
+    {
+      linhaB[s] = linhaA[s] *3;
+      Console.WriteLine($"A[{s}]={linhaA[s]} | | B[{s}]={linhaB[s]}");
+    }
+  }
+}
