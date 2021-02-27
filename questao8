@@ -1,0 +1,22 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 7**********");
+    int numN = 5;
+    int p4,fatorial;
+    
+
+    fatorial = numN;
+
+    for (p4 = numN - 1; p4 >= 1; p4--)
+    {
+      Console.WriteLine($"{fatorial} * {p4}");
+      fatorial = fatorial * p4;
+      Console.WriteLine($"Fatorial = {fatorial}");
+    
+    }
+    Console.WriteLine($"\nFatorial de {numN} é {fatorial} ");
+  }
+}
