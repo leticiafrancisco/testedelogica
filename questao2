@@ -1,0 +1,59 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 2**********");
+
+    int numA, numB, numC, numD, soma1, soma2, soma3,soma4,soma5,soma6, mult1, mult2, mult3, mult4, mult5, mult6;
+
+    Console.Write("Digite valor de A: ");
+    numA = int.Parse(Console.ReadLine());
+    
+    Console.Write("Digite valor de B: ");
+    numB = int.Parse(Console.ReadLine());
+   
+    Console.Write("Digite valor de C: ");
+    numC = int.Parse(Console.ReadLine());
+   
+    Console.Write("Digite valor de D: ");
+    numD = int.Parse(Console.ReadLine());
+
+    soma1 = numA + numB;
+    mult1 = numA * numB;
+
+    soma2 = numA + numC;
+    mult2 = numA * numC;
+
+    soma3 = numA + numD;
+    mult3 = numA * numD;
+
+    soma4 = numB + numC;
+    mult4 = numB * numC;
+
+    soma5 = numB + numD;
+    mult5 = numB * numD;
+
+    soma6 = numC + numD;
+    mult6 = numC * numD;
+
+    Console.WriteLine("**************RESULTADO*****************");
+    Console.WriteLine("A soma de A com B é: " + soma1);
+    Console.WriteLine("A multiplicação de A com B é: " + mult1);
+
+    Console.WriteLine("A soma de A com C é: " + soma2);
+    Console.WriteLine("A multiplicação de A com C é: " + mult2);
+
+    Console.WriteLine("A soma de A com D é: " + soma3);
+    Console.WriteLine("A multiplicação de A com D é: " + mult3);
+
+    Console.WriteLine("A soma de B com C é: " + soma4);
+    Console.WriteLine("A multiplicação de B com C é: " + mult4);
+
+    Console.WriteLine("A soma de B com D é: " + soma5);
+    Console.WriteLine("A multiplicação de B com D é: " + mult5);
+
+    Console.WriteLine("A soma de C com D é: " + soma6);
+    Console.WriteLine("A multiplicação de C com D é: " + mult6);
+  }
+}
