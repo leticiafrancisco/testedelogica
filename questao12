@@ -1,0 +1,29 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 12**********");
+    
+    int [] matrizM = new int [10];
+    int l, totalImpares = 0;
+    
+
+    for(l = 0; l < 10; l++)
+    {
+      Console.Write($"{l} - digite os dados da Matriz A: " );
+      matrizM[l] = int.Parse(Console.ReadLine());
+    } 
+   
+    for (l = 0; l < 10; l++)
+    {
+      if ((matrizM[l] % 2) != 0)
+      {
+    
+        totalImpares += matrizM[l];
+
+      }
+    }
+    Console.WriteLine($"Total da soma dos números impares: {totalImpares}");
+  }
+}
