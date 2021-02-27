@@ -3,7 +3,7 @@ using System;
 class MainClass {
   public static void Main (string[] args) {
     
-    Console.WriteLine("**********QUESTÃO 7**********");
+    Console.WriteLine("**********QUESTÃO 8**********");
     int numN = 5;
     int p4,fatorial;
     
