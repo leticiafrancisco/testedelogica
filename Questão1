@@ -1,0 +1,25 @@
+using System;
+
+class MainClass {  
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 1**********");
+
+    float tempo, velocidade, litrosUsados, distancia;
+
+    Console.Write("Tempo gasto(2.30): ");
+    tempo = float.Parse(Console.ReadLine());
+
+    Console.Write("Velocidade média: ");
+    velocidade = float.Parse(Console.ReadLine());
+
+    distancia = tempo * velocidade;
+
+    litrosUsados = distancia / 12;
+
+    Console.WriteLine($"Velocidade média:{velocidade}");
+    Console.WriteLine($"Tempo gasto de viagem: {tempo}");
+    Console.WriteLine($"Distância percorrida: {distancia}");
+    Console.WriteLine($"Quantidade de litros utilizados: {litrosUsados}");
+  }
+}
