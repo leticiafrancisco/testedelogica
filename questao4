@@ -1,0 +1,48 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("**********QUESTÃO 4**********");
+
+    int vA, vB, vC;
+
+    Console.Write("Digite um número inteiro para A: ");
+    vA = int.Parse(Console.ReadLine());
+
+    Console.Write("Digite um número inteiro para B: ");
+    vB = int.Parse(Console.ReadLine());
+
+    Console.Write("Digite um número inteiro para C: ");
+    vC = int.Parse(Console.ReadLine());
+
+    if(vA <= vB && vA <= vC && vB <+ vC)
+    {
+      Console.WriteLine($"Ordem crescente: {vA}, {vB}, {vC}...");
+    } 
+    else if(vA <= vC && vA <= vB && vC <= vB)
+    {
+      Console.WriteLine($"Ordem crescente: {vA}, {vC}, {vB}...");
+    }
+    else if(vB <= vA && vB <= vC && vA <= vC )
+    {
+      Console.WriteLine($"Ordem crescente: {vB}, {vA}, {vC}...");
+    }
+    else if(vB <= vC && vB <= vA && vC <= vA )
+    {
+      Console.WriteLine($"Ordem crescente: {vB}, {vC}, {vA}...");
+    }
+    else if(vC <= vA && vC <= vB && vA <= vB )
+    {
+      Console.WriteLine($"Ordem crescente: {vC}, {vA}, {vB}...");
+    }
+    else if(vC <= vA && vC <= vB && vB <= vA )
+    {
+      Console.WriteLine($"Ordem crescente: {vC}, {vB}, {vA}...");
+    }
+    else
+    {
+      Console.WriteLine("ERRO");
+    }
+  }
+}
